@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         name: app1
+        mycompany.com/department: finance
     spec:
       containers:
         - image: nginx
