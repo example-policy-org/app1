@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": false,
+  "automerge": false,
+  "pinDigests": true,
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "kustomization.yaml"
+      ],
+      "matchStrings": [
+        "mycompany.com/policy-version: \"(?<currentValue>.*)\"\\s+"
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "policy",
+      "lookupNameTemplate": "example-policy-org/policy",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
